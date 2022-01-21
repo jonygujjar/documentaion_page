@@ -1,0 +1,262 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Python_Basics_:_Getting_Started">Python Basics : Getting Started</a></li>
+    <li>
+      <a class="nav-link" href="#Main_Python_Data_Types">Main Python Data Types</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#How_to_Create_a_String_in_Python">How to Create a String in Python</a>
+    </li>
+    <li><a class="nav-link" href="#Math_Operators">Math Operators</a></li>
+    <li><a class="nav-link" href="#How_to_Store_Strings_in_Variables">How to Store Strings in Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Built_in_Functions_in_Python">Built in Functions in Python</a>
+    </li>
+    <li><a class="nav-link" href="#How_to_Define_a_Function">How to Define a Function</a></li>
+    <li><a class="nav-link" href="#Lists">Lists</a></li>
+    <li><a class="nav-link" href="#Dictionaries">
+        Dictionaries</a></li>
+    <li><a class="nav-link" href="#If_Statements_in_Python">If Statements in Python</a></li>
+
+    <li><a class="nav-link" href="#Python_Loops">Python Loops</a></li>
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Python_Basics_:_Getting_Started">
+    <header>Python Basics : Getting Started</header>
+    <article>
+      <p>
+        Most Windows and Mac computers come with Python pre-installed. You can check
+        that via a Command Line search. The particular appeal of Python is that you can
+        write a program in any text editor, save it in .py format and then run via a Command
+        Line. But as you learn to write more complex code or venture into data science, you
+        might want to switch to an IDE or IDLE
+      </p>
+
+      <p>
+        Shell is the default mode of operation for Python IDLE. In essence, it’s a simple loop
+        that performs that following four steps:
+      </p>
+      <ul>
+        <li>Reads the Python statement</li>
+        <li>Evaluates the results of it </li>
+        <li>Prints the result on the screen</li>
+        <li>And then loops back to read the next statement. </li>
+
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Main_Python_Data_Types">
+    <header>Main Python Data Types</header>
+    <article>
+      Every value in Python is called an “object”. And every object has a specific data
+      type. The three most-used data types are as follows:
+      Integers (int) — an integer number to represent an object such as “number 3”.
+      Strings — codify a sequence of characters using a string. For example, the word
+      “hello”. In Python 3, strings are immutable. If you already defined one, you cannot
+      change it later on.
+      While you can modify a string with commands such as replace() or join(), they will
+      create a copy of a string and apply modification to it, rather than rewrite the original
+      one.
+      Plus, another three types worth mentioning are lists, dictionaries, and tuples. All of
+      them are discussed in the next sections. 
+      <p>
+        For now, let’s focus on the strings.
+        Floating-point numbers (float) — use them to represent floating-point numbers.
+        Integers -2, -1, 0, 1, 2, 3, 4, 5
+        Strings ‘yo’, ‘hey’, ‘Hello!’, ‘what’s up!’
+        Floating-point numbers -1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.2
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="How_to_Create_a_String_in_Python">
+    <header>How to Create a String in Python</header>
+    <article>
+      <p>
+        You can create a string in three ways using single, double or triple quotes. Here’s an
+        example of every option:
+      </p>
+      <code>my_string = “Let’s Learn Python!”
+        another_string = ‘It may seem difficult first, but you
+        can do it!’
+        a_long_string = ‘’’Yes, you can even master multi-line
+        strings
+        that cover more than one line
+        with some practice’’’
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Math_Operators">
+    <header>Math Operators</header>
+    <article>
+      For reference, here’s a list of other math operations you can apply towards numbers:
+      <ul>
+        <li>** Exponent </li>
+        <li>% Modulus/Remainder</li>
+        <li>// Integer division </li>
+        <li>/ Division </li>
+        <li>* Multiplication </li>
+        <li>- Subtraction</li>
+        <li>+ Addition </li>
+        </>
+    </article>
+  </section>
+  <section class="main-section" id="How_to_Store_Strings_in_Variables">
+    <header>How to Store Strings in Variables</header>
+    <p>
+      Variables in Python 3 are special symbols that assign a specific storage location to
+      a value that’s tied to it. In essence, variables are like special labels that you place on
+      some value to know where it’s stored.
+      Strings incorporate data. So you can “pack” them inside a variable. Doing so makes
+      it easier to work with complex Python programs.
+      Here’s how you can store a string inside a variable.
+    </p>
+    <code>my_str = “Hello World”
+      print(my_str)
+      = Hello World</code>
+  </section>
+  <section class="main-section" id="Built_in_Functions_in_Python">
+    <header>Built in Functions in Python</header>
+    <article>
+      You already know the most popular function in Python — print(). Now let’s take a
+      look at its equally popular cousins that are in-built in the platform.
+      <p>
+        input() function is a simple way to prompt the user for some input (e.g. provide their
+        name). All user input is stored as a string.
+        Here’s a quick snippet to illustrate this: <code>name = input(“Hi! What’s your name? “)
+          print(“Nice to meet you “ + name + “!”)
+          age = input(“How old are you “)
+          print(“So, you are already “ + str(age) + “ years old, “
+          + name + “!”)</code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="How_to_Define_a_Function">
+    <header>How to Define a Function</header>
+    <article>
+      <p>
+        Apart from using in-built functions, Python 3 also allows you to define your own
+        functions for your program.
+        To recap, a function is a block of coded instructions that perform a certain action.
+        Once properly defined, a function can be reused throughout your program i.e. re-use
+        the same code.
+        Here’s a quick walkthrough explaining how to define a function in Python:
+        First, use def keyword followed by the function name():. The parentheses can
+        contain any parameters that your function should take (or stay empty)
+      </p>
+      <code>name.py
+        def name():
+        print(“What’s your name?”)
+        hello()</code>
+      <p>
+        Now, let’s take a look at a defined function with a parameter — an entity, specifying
+        an argument that a function can accept.
+      </p>
+      <code>def add_numbers(x, y, z):
+        a = x + y
+        b = x + z
+        c = y + z
+        print(a, b, c)
+        add_numbers(1, 2, 3)</code>
+    </article>
+  </section>
+  <section class="main-section" id="Lists">
+    <header>Lists</header>
+    <article>
+      <p>
+        Lists are another cornerstone data type in Python used to specify an ordered
+        sequence of elements. In short, they help you keep related data together and
+        perform the same operations on several values at once. Unlike strings, lists are
+        mutable (=changeable).
+      </p>
+
+      <p>
+        Each value inside a list is called an item and these are placed between square
+        brackets.
+      </p>
+      <code>my_list = [1, 2, 3]
+        my_list2 = [“a”, “b”, “c”]
+        my_list3 = [“4”, d, “book”, 5]</code>
+    </article>
+  </section>
+  <section class="main-section" id="Dictionaries">
+    <header>Dictionaries</header>
+    <article>
+      <p>
+        A dictionary holds indexes with keys that are mapped to certain values. These
+        key-value pairs offer a great way of organizing and storing data in Python. They are
+        mutable, meaning you can change the stored information.
+      </p>
+      <p>A key value can be either a string, Boolean, or integer. Here’s an example dictionary
+        illustrating this:</p>
+
+      <code>Customer 1= {‘username’: ‘john-sea’, ‘online’: false,
+        ‘friends’:100}</code>
+
+    </article>
+  </section>
+  <section class="main-section" id="If_Statements_in_Python">
+    <header>If Statements in Python</header>
+    <article>
+      <p>Just like other programming languages, Python supports the basic logical
+        conditions from math: </p>
+      <ul>
+        <li>Equals: a == b</li>
+        <li>Not Equals: a != b</li>
+        <li>Less than: a < b</li>
+        <li>Less than or equal to a or b</li>
+        <li>Greater than: a > b</li>
+        <li>Greater than or equal to: a >= b</li>
+        The goal of a conditional statement is to check if it’s True or False:
+        <code>if 5 > 1:
+          print(“That’s True!”)</code>
+        <p>For more complex operations, you can create nested if statements. Here’s how it
+          looks:</p>
+        <code>
+          x = 35
+          if x > 20:
+          print(“Above twenty,”)
+          if x > 30:
+          print(“and also above 30!”)
+        </code>
+
+    </article>
+  </section>
+  <section class="main-section" id="Python_Loops">
+    <header>Python Loops</header>
+    <article>
+      Python has two simple loop commands that are good to know:
+      <ul>
+        <li>For loops</li>
+        <li>While loops</li>
+      </ul>
+
+      <p>As already illustrated in the other sections of this Python checklist, for loop is a
+        handy way for iterating over a sequence such as a list, tuple, dictionary, string, etc.
+        Here’s an example showing how to loop through a string:</p>
+      <code>for x in “apple”:
+        print(x)</code>
+      <p>While loop enables you to execute a set of statements as long as the condition for
+        them is true.</p>
+      <code>#print as long as x is less than 8
+        i = 1
+        while i< 8: print(x) i +=1</code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a href="https://websitesetup.org/python-cheat-sheet/" target="_blank">WebsiteSetup</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
